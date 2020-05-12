@@ -1,0 +1,42 @@
+.drop-border{
+    border: dashed grey 4px;
+    background-color: rgba(255, 255, 255, .8);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.drop{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: grey;
+    font-size: 36px;
+}
+
+.drop-box{
+    display: inline-block;
+    position: absolute;
+    color: red;
+}
+
+.wip{
+    width: 250px;
+    text-align: left;
+}
+
+.droppable{
+    width: 250px;
+    float: right;
+
+}
+
+.draggable{
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+}

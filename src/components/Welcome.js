@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { Alert } from 'react-alert'
 import Lottie from 'react-lottie';
 import Reward from 'react-rewards';
 import Box from '../lotties/love-box.json';
@@ -18,6 +19,7 @@ export default class Home extends Component{
 
     clickMe(){
         this.reward.rewardMe();
+        alert("Hello Mother goddess")
     }
 
     render(){
