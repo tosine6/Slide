@@ -23,7 +23,7 @@ const routing = (
         <Switch>
         <Route exact path="/file" component={FileList}/>
         <Route exact path="/drag1" component={DragAndDrop1}/>
-        <Route exact path="/" component={DragAndDrop}/>
+        <Route exact path="/drag" component={DragAndDrop}/>
         <Route exact path="/chat1" component={Chat}/>
         <Route exact path="/chat" component={SideNav}/>
         <Route exact path="/list" component={List}/>
@@ -32,7 +32,7 @@ const routing = (
         <Route exact path="/welcome" component={Welcome}/>
         <Route exact path="/signup" component={SignUpForm}/>
         <Route exact path="/login" component={Login}/>
-        <Route exact path="/home" component={Home}/>
+        <Route exact path="/" component={Home}/>
         <Route exact path="/app" component={App}/>
         </Switch>
     </Router>

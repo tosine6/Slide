@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import webshare from 'react-web-share-api';
 import {WhatsappShareButton, EmailShareButton, EmailIcon, FacebookMessengerIcon, FacebookMessengerShareButton, TwitterShareButton,TwitterIcon, WhatsappIcon} from "react-share";
 import {Passers} from 'prop-passer';
-import './Drag.css'
+import './Drag.css';
+import FadeIn from 'react-fade-in';
 
 
 
@@ -23,6 +24,7 @@ const ListPropPassers = Passers({
 
 return(
     <ListPropPassers>
+        <FadeIn transitionDuration={400}>
         <WhatsappShareButton
             title={title}
             text={shareImage}>
@@ -51,6 +53,7 @@ return(
             round={true}
             />
         </EmailShareButton>
+        </FadeIn>
     </ListPropPassers>
 )
 
