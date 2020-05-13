@@ -4,3 +4,47 @@
     border: 4px solid red;
     margin-top: 50px;
 }
+
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: margin .5s;
+    margin: 0 0 0 -250px;
+  }
+  
+  .wrapper.is-nav-open{
+    margin-left: 0;
+  }
+  
+  .nav{
+    position: relative;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+  }
+  
+  .nav__icon{
+    position: absolute;
+    top:0;
+    right:  -60px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color .3s;
+  }
+  
+  
+  .nav__icon:hover{
+    color: #5eb2ff
+  }
+  
+  .content{
+      height: 32px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 16px;
+  }
+  

@@ -7,8 +7,6 @@ const ListItem = ({action, title, setClicked}) => {
             <button
             onClick={() => {
                 setClicked(title);
-                alert("Successful")
-                // action(alert("Clicked"));
             }}
             className="btn btn-primary">
             {title}

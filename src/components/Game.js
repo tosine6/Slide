@@ -3,13 +3,126 @@ import React, {Component} from 'react';
 
 export default class Game extends Component{
     constructor(props){
-        super(props)
+        super(props);
+        this.state={
+            letter: "",
+        }
 
+    }
+
+    handleLetterClick = () =>{
+        this.setState({
+            letter: "A"
+        })
+        console.log(this.letter)
     }
 
     render(){
         return(
             <div className="container">
+
+            <div className="card">
+                <h3 class="card-header text-center font-weight-bold text-uppercase py-4">SELECT LETTER</h3>
+                <div className="card-body"></div>
+                    <div id="table"></div>
+                    <table class="table table-bordered table-responsive-md table-striped text-center">
+                        <tbody>
+                            <tr>
+                            <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0" value="a" onClick={this.handleLetterClick}>A</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">B</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">C</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">D</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">E</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-danger btn-rounded btn-sm my-0">F</button></span>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">G</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">H</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">I</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">J</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">K</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-danger btn-rounded btn-sm my-0">L</button></span>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">M</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">N</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">O</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">P</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">Q</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-danger btn-rounded btn-sm my-0">R</button></span>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">S</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">T</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">U</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">V</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">W</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-danger btn-rounded btn-sm my-0">X</button></span>
+                                </td>
+                            </tr>
+                            <tr>
+                            <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">Y</button></span>
+                                </td>
+                                <td>
+                                <span><button class="btn btn-success btn-rounded btn-sm my-0">Z</button></span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            
+
+
             <div className="card">
                 <h3 class="card-header text-center font-weight-bold text-uppercase py-4">WORD GAME</h3>
                 <div className="card-body"></div>
